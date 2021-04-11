@@ -21,7 +21,19 @@ public class IniParser extends Parser {
         super(inputFile);
     }
 
+    public void showB(Map<String, String> item){
+        item.forEach((key, value) -> System.out.println(key + " " + value));;
+    }
 
+    @Override
+    public void show() {
+        getEntries().forEach((key, value) -> {
+            System.out.println("[" + key + "]" + "\n" );
+            showB(value);
+            System.out.println("\n" );
+        });
+
+    }
 
     @Override
     public boolean equals(Object o) {

@@ -11,4 +11,6 @@ public abstract class Parser {
     Parser(File inputFile){
         this.file = inputFile;
     }
+
+    public void show() {}
 }

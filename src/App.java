@@ -1,12 +1,13 @@
 import java.io.File;
+import java.io.IOException;
 
 public class App {
 
-    File iniFile = new File("settings.ini");
-    IniParser iniParser = new IniParser(iniFile);
-    IniParserController iniParserController = new IniParserController(iniParser);
-
     public static void main(String[] args) {
-
+        File iniFile = new File("/Users/fedorkon/IdeaProjects/IniParser/src/settings.ini");
+        IniParser iniParser = new IniParser(iniFile);
+        IniParserController iniParserController = new IniParserController(iniParser);
+        iniParserController.parsing();
+        iniParser.show();
     }
 }
