@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 
-public class IniParserController extends ParserController {
+public class IniParserController implements ParserController {
     IniParser parser;
 
     IniParserController(IniParser parser) {
