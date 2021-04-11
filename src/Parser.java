@@ -12,5 +12,5 @@ public abstract class Parser {
         this.file = inputFile;
     }
 
-    public void show() {}
+    protected void show() {}
 }
