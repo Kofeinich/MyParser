@@ -13,7 +13,7 @@ public class IniParserController extends ParserController {
     }
 
     @Override
-    protected void parsing() throws IOException {
+    public void parsing() throws IOException {
         if (IniParser.class.equals(parser.getClass())) {
             System.out.println("U are stupid!!!");
         }
@@ -39,6 +39,9 @@ public class IniParserController extends ParserController {
                     }
                 }
             }
+        }
+        catch (){
+
         }
     }
 }
